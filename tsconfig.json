@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "lib": [
+      "DOM",
+      "ESNext"
+    ]
+    /* Specify a set of bundled library declaration files that describe the target runtime environment. */ ,
+    "jsx": "react-jsx" /* 这个一定要有 Specify what JSX code is generated. */,
+    "module": "commonjs" /* Specify what module code is generated. */,
+    "resolveJsonModule": true /* Enable importing .json files. */,
+    "noEmit": true /* Disable emitting files from a compilation. */,
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "include": [
+    "./"
+  ]
+}
