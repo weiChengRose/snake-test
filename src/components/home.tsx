@@ -14,7 +14,7 @@ class Home extends React.Component {
    food() {
       const fd = new Food('food-dot')
 
-      const snake = new Snake('snipe-dot', 'snipe-dot', '')
+      const snake = new Snake('snipe-dot')
 
       console.log('=======snake', snake)
       console.log('========fd', fd.X, fd.changePosition())

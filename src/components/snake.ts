@@ -2,21 +2,20 @@ class Snake {
 
   element: HTMLElement;
   head: HTMLElement;
-  body: HTMLElement;
+  bodys: HTMLCollection
 
-  constructor(elId: string = '', headId: string = '', body) {
+  constructor(elId: string = '') {
     this.element = document.getElementById(elId)!;
-    this.head = document.getElementById(headId)!;
-    this.body = body
+    this.bodys = document.getElementsByClassName(elId)!;
   }
 
   get X(): number {
-    return 1
+    return this.element.offsetLeft
   }
 
 
   get Y(): number {
-    return 1
+    return this.element.offsetTop
   }
 
   changePosition(): void {
