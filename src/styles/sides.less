@@ -1,5 +1,5 @@
 // 设置变量背景颜色、字体
-@bg-color: #ebd6f6;
+@bg-color: #edf7e8;
 
 // 清楚默认样式
 * {
@@ -30,10 +30,31 @@ body {
       padding: 10px;
 
       .snipe-dot {
-        width: 10px;
-        height: 10px;
+        width: 11px;
+        height: 11px;
         background-color: black;
         border: 1px solid @bg-color;
+        position: absolute;
+
+      }
+
+      .food-dot {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 60px;
+        top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+        &>div {
+          width: 4px;
+          height: 4px;
+          background-color: black;
+          transform: rotate(45deg);
+        }
       }
     }
 
