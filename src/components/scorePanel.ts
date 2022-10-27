@@ -3,7 +3,9 @@
  */
 
 class ScorePanel {
-  constructor(parameters) {
-
+  score: number
+  constructor() {
   }
 }
+
+export default ScorePanel

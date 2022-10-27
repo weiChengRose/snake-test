@@ -4,23 +4,18 @@
 */
 import React from 'react';
 import "../styles/sides.less"
-import Food from './food'
-import Snake from './snake'
+import GameControl from "./gameControl";
 
 class Home extends React.Component {
    constructor(props) {
       super(props)
    }
-   food() {
-      const fd = new Food('food-dot')
-
-      const snake = new Snake('snipe-dot')
-
-      console.log('=======snake', snake)
-      console.log('========fd', fd.X, fd.changePosition())
+   startGame() {
+      const gameControl = new GameControl()
+      gameControl.init()
    }
    componentDidMount(): void {
-      this.food()
+      this.startGame()
    }
    componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
    }
@@ -38,7 +33,9 @@ class Home extends React.Component {
          // 主面板
          <div className="spack">
             <div className="stage">
-               <div className="snipe-dot"></div>
+               <div className="snipe-dot">
+
+               </div>
                <div className="food-dot" id="food-dot">
                   <div></div>
                   <div></div>
