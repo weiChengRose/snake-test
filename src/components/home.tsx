@@ -33,7 +33,7 @@ class Home extends React.Component {
          // 主面板
          <div className="spack">
             <div className="stage">
-               <div className="snipe-dot">
+               <div className="snipe-dot" id="snipe-dot">
 
                </div>
                <div className="food-dot" id="food-dot">

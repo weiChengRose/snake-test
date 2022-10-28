@@ -4,7 +4,7 @@
 
 class ScorePanel {
   score: number
-  constructor() {
+  constructor(elId: string = '') {
   }
 }
 

@@ -5,7 +5,7 @@ class Snake {
   element: HTMLElement
 
   constructor(elId: string = '') {
-    this.head = document.getElementById(elId)!;
+    this.head = document.getElementById('snipe-dot')!;
     this.element = document.getElementById('stage')!;
     this.bodys = document.getElementsByClassName(elId)!;
   }
